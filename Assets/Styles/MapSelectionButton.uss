@@ -1,0 +1,129 @@
+.Map-selection-button {
+    align-items: center;
+    position: absolute;
+    top: 146px;
+    left: 388px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-color: rgba(65, 59, 59, 255);
+    border-right-color: rgba(65, 59, 59, 255);
+    border-top-color: rgba(65, 59, 59, 255);
+    border-bottom-color: rgba(65, 59, 59, 255);
+    background-color: rgba(56, 56, 56, 255);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hiddenElement {
+    display: none;
+}
+
+.Map-selection-button:hover {
+    align-items: center;
+    position: absolute;
+    top: 146px;
+    left: 388px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-color: rgb(113, 100, 100);
+    border-right-color: rgb(113, 100, 100);
+    border-top-color: rgb(113, 100, 100);
+    border-bottom-color: rgb(113, 100, 100);
+    background-color: rgb(113, 100, 100);
+}
+
+.Map-selection-button:active {
+    align-items: center;
+    position: absolute;
+    top: 146px;
+    left: 388px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-color: rgb(65, 59, 59);
+    border-right-color: rgb(65, 59, 59);
+    border-top-color: rgb(65, 59, 59);
+    border-bottom-color: rgb(65, 59, 59);
+    background-color: rgb(0, 0, 0);
+}
+
+.Open-menu {
+    width: 115px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-color: rgb(32, 32, 32);
+    border-right-color: rgb(32, 32, 32);
+    border-top-color: rgb(32, 32, 32);
+    border-bottom-color: rgb(32, 32, 32);
+    background-color: rgb(65, 59, 59);
+    height: 36px;
+    white-space: nowrap;
+    -unity-text-align: middle-center;
+    position: absolute;
+    left: 871px;
+    align-items: stretch;
+    flex-direction: column;
+    top: 4px;
+}
+
+.Open-menu:hover {
+    width: 115px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-color: rgb(79, 79, 79);
+    border-right-color: rgb(79, 79, 79);
+    border-top-color: rgb(79, 79, 79);
+    border-bottom-color: rgb(79, 79, 79);
+    background-color: rgb(94, 93, 93);
+    height: 36px;
+    white-space: nowrap;
+    -unity-text-align: middle-center;
+    position: absolute;
+    left: 871px;
+    align-items: stretch;
+    flex-direction: column;
+    top: 4px;
+}
+
+.Open-menu:active {
+    width: 115px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left-color: rgb(56, 56, 56);
+    border-right-color: rgb(56, 56, 56);
+    border-top-color: rgb(56, 56, 56);
+    border-bottom-color: rgb(56, 56, 56);
+    background-color: rgb(0, 0, 0);
+    height: 36px;
+    white-space: nowrap;
+    -unity-text-align: middle-center;
+    position: absolute;
+    left: 871px;
+    align-items: stretch;
+    flex-direction: column;
+    top: 4px;
+}
