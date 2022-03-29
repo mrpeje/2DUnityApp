@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public GameObject map;
+    public MapGroup Maps;
+    GameObject map;
     private float mapMinX, mapMaxX, mapMinY, mapMaxY; 
     private Vector3 originCamPos, newCamPos; 
     private float zoomStep, minCamSize, maxCamSize;
 
     // Init
-    private void Awake()
+    private void Start()
     {
+        map = Maps.GetActiveMap();
         SpriteRenderer sp = map.GetComponent<SpriteRenderer>();
 
         mapMinX = sp.transform.position.x - sp.bounds.size.x / 2f;
@@ -23,6 +25,21 @@ public class CameraControl : MonoBehaviour
         zoomStep = 1/20f;
         minCamSize = 1;
         maxCamSize = mapMaxY/2;
+    }
+    void InitOnChange()
+    {
+        map = Maps.GetActiveMap();
+        SpriteRenderer sp = map.GetComponent<SpriteRenderer>();
+
+        mapMinX = sp.transform.position.x - sp.bounds.size.x / 2f;
+        mapMaxX = sp.transform.position.x + sp.bounds.size.x / 2f;
+
+        mapMinY = sp.transform.position.y - sp.bounds.size.y / 2f;
+        mapMaxY = sp.transform.position.y + sp.bounds.size.y / 2f;
+
+        zoomStep = 1 / 20f;
+        minCamSize = 1;
+        maxCamSize = mapMaxY / 2;
     }
     void ZoomIn()
     {
@@ -55,6 +72,8 @@ public class CameraControl : MonoBehaviour
     }
     void Update()
     {
+        // Event ActiveMapChanged
+        Maps.ActiveMapChanged += InitOnChange;
         // ZoomIn and ZoomOut
         if (Input.touchCount == 2)
         {
