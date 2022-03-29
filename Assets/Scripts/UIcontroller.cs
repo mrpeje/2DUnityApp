@@ -25,17 +25,16 @@ public class UIcontroller : MonoBehaviour
     {
         // Open menu
         if (IsMenuOpen == false)
-        {            
-            WoodsBtn.style.visibility = Visibility.Visible;
-            CustomsBtn.style.visibility = Visibility.Visible;
+        {
+            WoodsBtn.style.display = DisplayStyle.Flex;
+            CustomsBtn.style.display = DisplayStyle.Flex;
             IsMenuOpen = true;
         }
         // Close menu
-        if(IsMenuOpen == true)
+        else if(IsMenuOpen == true)
         {
-            //WoodsBtn.AddToClassList("hiddenElement");
-            WoodsBtn.style.visibility = Visibility.Hidden;
-            CustomsBtn.style.visibility = Visibility.Hidden;
+            WoodsBtn.style.display = DisplayStyle.None;
+            CustomsBtn.style.display = DisplayStyle.None;
             IsMenuOpen = false;
         }
     }
