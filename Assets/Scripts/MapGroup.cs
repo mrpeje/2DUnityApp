@@ -30,6 +30,7 @@ public class MapGroup : MonoBehaviour
                 Maps[i].SetActive(false);
 
         }
-        ActiveMapChanged();
+        if (ActiveMapChanged != null)
+            ActiveMapChanged();
     }
 }

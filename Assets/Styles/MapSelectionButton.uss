@@ -7,18 +7,18 @@
     border-bottom-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    border-left-color: rgba(65, 59, 59, 255);
-    border-right-color: rgba(65, 59, 59, 255);
-    border-top-color: rgba(65, 59, 59, 255);
-    border-bottom-color: rgba(65, 59, 59, 255);
-    background-color: rgba(56, 56, 56, 255);
+    border-left-color: rgb(65, 59, 59);
+    border-right-color: rgb(65, 59, 59);
+    border-top-color: rgb(65, 59, 59);
+    border-bottom-color: rgb(65, 59, 59);
+    background-color: rgb(56, 56, 56);
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
-}
-.hiddenElement {
-    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 255);
 }
 
 .Map-selection-button:hover {
